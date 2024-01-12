@@ -174,3 +174,41 @@ body{
     cursor: pointer;
   }
 }
+
+@media(max-width: 280px){
+  .search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 0px 4px 4px 4px;
+    height: 60px;
+    border-radius: 20px;
+    flex: 1;
+    margin-right: 4px;
+    font-size: 18px;
+  }
+
+  .search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 30%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+
+  .card{
+    width: 108%;
+    /*width: 90%;
+    max-width: 470px;*/
+    background: linear-gradient(135deg, #60a7ff, #3d385c);
+    /*background: transparent;*/
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+  }
+}
