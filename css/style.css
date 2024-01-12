@@ -123,3 +123,29 @@ body{
   max-width: 470px;
   }
 }
+
+
+@media(max-width: 360px){
+  .search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 0px 7px;
+    height: 60px;
+    border-radius: 20px;
+    flex: 1;
+    margin-right: 8px;
+    font-size: 18px;
+  }
+
+  .search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 30%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+}
