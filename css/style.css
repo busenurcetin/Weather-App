@@ -13,7 +13,9 @@ html {
   background-size: cover;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  margin-top: -60px;
+  padding-bottom: 40px;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
@@ -30,13 +32,14 @@ html {
   max-width: 470px;*/
   display: flex;
   flex-direction: column;
-  background: linear-gradient(135deg, #60a7ff, #3d385c);
+  background: linear-gradient(135deg, #e5ced8, #7d5162);
   /*background: transparent;*/
   color: #fff;
   margin: 100px auto 0;
-  border-radius: 20px;
-  padding: 40px 35px;
+  border-radius: 25px;
+  padding: 25px 35px;
   text-align: center;
+  box-shadow: 5px 5px 10px #7d5162;
 }
 
 .search {
@@ -51,8 +54,8 @@ html {
   outline: 0;
   background: #ebfffc;
   color: #555;
-  padding: 10px 25px;
-  height: 60px;
+  padding: 10px 15px;
+  height: 30px;
   border-radius: 30px;
   flex: 1;
   margin-right: 16px;
@@ -65,12 +68,20 @@ html {
   background: #ebfffc;
   border-radius: 50%;
   width: 60px;
-  height: 60px;
+  height: 55px;
   cursor: pointer;
+  transition: all 1s;
+}
+
+.search button:hover img{
+  transform: rotateY(180deg);
+  /* filter: brightness(0) saturate(100%) invert(38%) sepia(3%) saturate(5163%) hue-rotate(285deg) brightness(88%) contrast(86%); */
+  filter: brightness(0) saturate(100%) invert(18%) sepia(90%) saturate(1814%) hue-rotate(313deg) brightness(96%) contrast(95%);
 }
 
 .search button img {
-  width: 16px;
+  width: 18px;
+  transition: all 1s;
 }
 
 .weather-icon {
@@ -91,8 +102,8 @@ html {
 
 .details {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: stretch;
+  justify-content: space-around;
   padding: 0 20px;
   margin-top: 50px;
 }
@@ -100,17 +111,23 @@ html {
 .col {
   display: flex;
   align-items: center;
-  text-align: left;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .col img {
   width: 40px;
-  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.col .title{
+    margin-top:-8px;
 }
 
 .humidity,
 .wind {
-  font-size: 28px;
+  font-size: 24px;
   margin-top: -6px;
 }
 
@@ -126,22 +143,21 @@ html {
   display: none;
 }
 
-@media(max-width: 912px) {
+@media (max-width: 912px) {
   .card {
     width: 90%;
     max-width: 470px;
   }
 }
 
-@media(max-width: 1280px) {
+@media (max-width: 1280px) {
   .card {
-    width: 90%;
+    width: 80%;
     max-width: 470px;
   }
 }
 
-
-@media(max-width: 360px) {
+@media (max-width: 360px) {
   .search input {
     border: 0;
     outline: 0;
@@ -166,7 +182,7 @@ html {
   }
 }
 
-@media(max-width: 375px) {
+@media (max-width: 375px) {
   .search input {
     border: 0;
     outline: 0;
@@ -191,7 +207,7 @@ html {
   }
 }
 
-@media(max-width: 280px) {
+@media (max-width: 280px) {
   .search input {
     border: 0;
     outline: 0;
@@ -229,14 +245,14 @@ html {
   }
 }
 
-@media(max-width: 360px) {
+@media (max-width: 360px) {
   .search input {
     border: 0;
     outline: 0;
     background: #ebfffc;
     color: #555;
-    padding: 0px 7px;
-    height: 60px;
+    padding: 0px px;
+    height: 35px;
     border-radius: 20px;
     flex: 1;
     margin-right: 8px;
@@ -247,14 +263,14 @@ html {
     border: 0;
     outline: 0;
     background: #ebfffc;
-    border-radius: 30%;
-    width: 60px;
-    height: 60px;
+    border-radius: 50%;
+    /* width: 70px; */
+    height: 35px;
     cursor: pointer;
   }
 }
 
-@media(max-width: 320px) {
+@media (max-width: 320px) {
   .search input {
     border: 0;
     outline: 0;
